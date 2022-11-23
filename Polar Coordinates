@@ -1,0 +1,55 @@
+Problem Statements
+
+Polar coordinates are an alternative way of representing Cartesian coordinates or Complex Numbers.
+
+A complex number z
+
+is completely determined by its real part x and imaginary part y.
+
+Here, j is the imaginary unit.
+
+
+A polar coordinate (r, q)
+
+is completely determined by modulus r and phase angle q.
+
+if we convert complex number z to its polar coordinate, we find:
+
+r : Distance from z to origin, i.e., √(x²+y²)
+q : Counter clockwise angle measured from the positive x-axis to the line segment that joins z to the origin.
+
+Python’s cmath module provides access to the mathematical functions for complex numbers.
+
+cmath.phase
+
+This tool returns the phase of complex number z(also known as the argument of z).
+
+>>> phase(complex(-1.0, 0.0))
+3.1415926535897931
+abs
+
+This tool returns the modulus (absolute value) of complex number z.
+
+>>> abs(complex(-1.0, 0.0))
+1.0
+Task :
+You are given a complex z. Your task is to convert it to polar coordinates.
+
+Input Format :
+A single line containing the complex number z. Note: complex() function can be used in python to convert the input as a complex number.
+
+Constraints :
+Given number is a valid complex number
+
+
+
+
+
+
+import cmath;
+
+num = complex(input())
+z = complex(num)
+
+print(cmath.polar(z)[0])
+print(cmath.polar(z)[1])
